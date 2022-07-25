@@ -44,3 +44,11 @@ function animation(){
 //setInterval(animation, 3000);
 arrowRight.addEventListener("click", avance);
 arrowLeft.addEventListener("click", retour);
+
+// barre de chargement
+let button = document.querySelector("button#next"),
+  barreChargement = document.querySelector("#contenu1");
+
+button.addEventListener("click", function () {
+  barreChargement.style.width =  "480px";
+});

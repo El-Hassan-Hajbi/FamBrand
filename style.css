@@ -247,3 +247,27 @@ button#arrowRight{
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
   }
+
+  div.barre-chargement{
+    width: 400px;
+    height: 15px;
+    position: relative;
+    top: 15%;
+    left: 20%;
+    background-color : #D2D1AB;
+  }
+  
+  div#contenu1
+  {
+    background-color :  #5F735D;
+    width: 200px;
+    height: 15px;
+    transition: 2s;
+  }
+  
+button#next{
+    position: relative;
+    top: 20%;
+    width: 60px;
+    height: 30px;
+}
