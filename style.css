@@ -99,7 +99,7 @@ p#copyright{
     font-family: chillax;
 }
 
-header#about{
+header#about, header#contact{
     text-align: center;
 }
 h2#aboutTitle {
