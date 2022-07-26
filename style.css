@@ -17,8 +17,11 @@
 body{
     background-color: #D2D1AB;
     height: 100vh;
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+
 }
 
 
@@ -116,10 +119,13 @@ div.main-products {
     .product-name { grid-area: 2 / 1 / 4 / 4;}
     .paragraphe-product { grid-area: 4 / 1 / 8 / 4; }
     .title-product { grid-area: 1 / 1 / 2 / 10; }
-    .secondImage { grid-area: 2 / 9 / 6 / 10; }
-    .firstImage { grid-area: 2 / 5 / 6 / 8; }
-    .arrows { grid-area: 2 / 4 / 8 / 5; }
-    .buttonBuy { grid-area: 6 / 6 / 8 / 9; }
+    .secondImage { grid-area: 2 / 9 / 6 / 10;  }
+    .firstImage { grid-area:  2 / 6 / 7 / 9; }
+    .arrows { grid-area:  6 / 4 / 8 / 6; }
+    .buttonBuy { grid-area: 7 / 9 / 8 / 10; }
+    .barre { grid-area: 8 / 6 / 7 / 9; }
+
+
 
 img#imageProduct {
     width: 80%;
@@ -200,13 +206,13 @@ h3#sous-produit-name{
     transform: translate(-50%, -50%);
 }
 button#buy{
-    background-color: #C3CEAB;
+    background-color: #384E32;
     border: 0;
-    position: relative;
-    top: 45%;
-    left: 10%;
-    width: 20%;
-    height: 20%;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 40%;
+    border-radius: 30px;
     color: black;
 }
 span{
@@ -215,27 +221,27 @@ span{
 
 button#arrowRight{
     background-color: gray;
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
     position: relative;
     bottom: -65%;
     left: 50%;
     border: 0;
     border-radius: 50%;
 }button#arrowLeft{
-    background-color: gray;
+    background-color: #D2D1AB;
     position: relative;
     bottom: -65%;
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
     border: 0;
     border-radius: 50%;
 }
 .arrow {
-    border: solid black;
+    border: solid #384E32;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 6px;
   }
   
   .right {
@@ -249,7 +255,7 @@ button#arrowRight{
   }
 
   div.barre-chargement{
-    width: 400px;
+    width: 80%;
     height: 15px;
     position: relative;
     top: 15%;
@@ -260,14 +266,21 @@ button#arrowRight{
   div#contenu1
   {
     background-color :  #5F735D;
-    width: 200px;
+    width: 50%;
     height: 15px;
     transition: 2s;
+    border-radius: 20px;
   }
   
 button#next{
+    background-color: #D2D1AB;
     position: relative;
     top: 20%;
     width: 60px;
     height: 30px;
+}
+
+
+div.image{
+    text-align: center;
 }
