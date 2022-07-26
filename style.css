@@ -13,7 +13,9 @@
     font-family: author;
     src: url(Author-Regular.woff);
   }
-
+html{
+    width: 100%;
+}
 body{
     background-color: #D2D1AB;
     height: 100vh;
@@ -21,7 +23,7 @@ body{
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-
+    overflow-x: hidden;
 }
 
 
@@ -58,6 +60,13 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     
+}
+#h1-logo-section{
+    position: relative;
+    top: -70px;
+    left: -360px;
+    font-family: tanker;
+    font-size: 48px;
 }
 #h1-logo{
     font-family: tanker;
@@ -114,6 +123,7 @@ div.main-products {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 100vh;
+    background-color: #c0bf96;
     }
     
     .product-name { grid-area: 2 / 1 / 4 / 4;}
@@ -153,9 +163,12 @@ span#productTag{
     font-weight: bold;
 }
 h1#Rubrique{
-       text-decoration-line: underline; 
        font-size: 40px;
 
+}
+img#terroire{
+    width: 100%;
+    height: 100%;
 }
 
 h2#name-product:after{
@@ -219,7 +232,7 @@ span{
     font-size: 20px;
 }
 
-button#arrowRight{
+button.arrowRight{
     background-color: gray;
     height: 80px;
     width: 80px;
@@ -228,7 +241,7 @@ button#arrowRight{
     left: 50%;
     border: 0;
     border-radius: 50%;
-}button#arrowLeft{
+}button.arrowLeft{
     background-color: #D2D1AB;
     position: relative;
     bottom: -65%;
@@ -236,6 +249,18 @@ button#arrowRight{
     width: 80px;
     border: 0;
     border-radius: 50%;
+}
+
+#sous-ArrowRight{
+    position: relative;
+    top: 65%;
+    left: 0;
+}
+#sous-ArrowLeft{
+    position: relative;
+    top: -32%;
+    left: -100%;
+    background-color: gray;
 }
 .arrow {
     border: solid #384E32;
@@ -260,7 +285,7 @@ button#arrowRight{
     position: relative;
     top: 15%;
     left: 20%;
-    background-color : #D2D1AB;
+    background-color : #c0bf96;
   }
   
   div#contenu1

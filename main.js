@@ -1,5 +1,5 @@
-let arrowRight = document.querySelector("#arrowRight"),
-    arrowLeft = document.querySelector("#arrowLeft"),
+let arrowRight = document.querySelector("#arrowRightProducts"),
+    arrowLeft = document.querySelector("#arrowLeftProducts"),
    productName = document.querySelector("#name-product"),
    paragraphProduct = document.querySelector("#paragraphe-product"),
    imageProduct = document.querySelector("#imageProduct"),
@@ -7,11 +7,13 @@ let arrowRight = document.querySelector("#arrowRight"),
    sousProduitName = document.querySelector("#sous-produit-name");
 
 // barre de chargement
-let button = document.querySelector("button#next"),
-  barreChargement = document.querySelector("#contenu1");
+let button = document.querySelector("button#sous-ArrowRight"),
+    buttonLeft = document.querySelector("button#sous-ArrowLeft");
+  //barreChargement = document.querySelector("#contenu1");
 
 button.addEventListener("click", next);
-   
+buttonLeft.addEventListener("click", prec);
+
 let pArganAlimentaire = "L'huile d'argan ou l'huile d'argane1,2 est une huile végétale produite à partir des fruits de l'arganier et riche en vitamine A, vitamine E (Tocophérol), en antioxydants et en acides gras essentiels3 Ses propriétés lui confèrent de nombreux usages dans l’alimentation, la médecine et la cosmétique."
 let pArganCosmetique = "L'huile d'argan ou l'huile d'argane1,2 est une huile végétale produite à partir des fruits de l'arganier et riche en vitamine A, vitamine E (Tocophérol), en antioxydants et en acides gras essentiels3 Ses propriétés lui confèrent de nombreux usages dans l’alimentation, la médecine et la cosmétique."
 let pAmlou = "L'amlou est une préparation culinaire berbère de la région du Souss (Maroc) que les Chleuhs ont l'habitude de consommer. Elle se compose d'huile d'argan, d'amandes ou de cacahuètes et peut contenir du miel. C'est un fortifiant qui est servi au petit déjeuner ou au goûter en pâte à tartiner sur du pain d’orge, de maïs ou de blé. Il accompagne aussi toutes sortes de pâtisseries."
@@ -32,7 +34,7 @@ function avance(){
         productTag.innerHTML = list[i][3];
         sousProduitName.innerHTML = list[i][4];
         j = 0;
-        barreChargement.style.width = `${((j+1)*100/(list[i][6]))}%`;
+        //barreChargement.style.width = `${((j+1)*100/(list[i][6]))}%`;
     }
 }
 function retour(){
@@ -44,7 +46,7 @@ function retour(){
         productTag.innerHTML = list[i][3];
         sousProduitName.innerHTML = list[i][4];
         j = 0;
-        barreChargement.style.width = `${((j+1)*100/(list[i][6]))}%`;
+        //barreChargement.style.width = `${((j+1)*100/(list[i][6]))}%`;
 
     }
 }
@@ -55,11 +57,20 @@ function next(){
         sousProduitName.innerHTML = list[i][5][0][j];
         imageProduct.setAttribute("src", list[i][5][2][j]);
         paragraphProduct.innerHTML = list[i][5][1][j];
-        barreChargement.style.width = `${((j+1)*100/(list[i][6]))}%`;
+        //barreChargement.style.width = `${((j+1)*100/(list[i][6]))}%`;
 
     }
 }
+function prec(){
+    if (j>=1 && j<list[i][6]){
+        j--;
+        sousProduitName.innerHTML = list[i][5][0][j];
+        imageProduct.setAttribute("src", list[i][5][2][j]);
+        paragraphProduct.innerHTML = list[i][5][1][j];
+        //barreChargement.style.width = `${((j+1)*100/(list[i][6]))}%`;
 
+    }
+}
 
 
 function animation(){
